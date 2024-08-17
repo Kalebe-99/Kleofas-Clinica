@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinica Kléofas</title>
+    <link rel="stylesheet" href="Estilo.css" type="text/css">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
+
+</head>
+<body>
+    <header class="header">
+        <img id="imagem"
+             src="files/Clinica_médica.png"
+             alt="Uma imagem de uma cruz verde, abaixo estão os escritos Kléofas Clinica-médica" 
+             >
+        <nav>
+            <ul class="header_ul">
+                <li> <a href="#section1">HOME</a> </li>
+                <li> <a href="#section2">DIFERENCIAIS</a> </li>
+                <li> <a href="#section3">SOBRE NÓS</a> </li>
+                <li> <a href="#section4">POR QUE NÓS ESCOLHER</a> </li>
+            </ul>
+        </nav>
+        <a href="#footer" id="Contate-nos">Agende sua consulta</a >
+    </header>
+    <section class="carrossel" id="section1">
+        <div class="fotos">
+            <img src="files/IMG1.jpg" alt="" class="active">
+            <img src="files/IMG2.jpg" alt="">
+        </div>
+        <div class="text-slider">
+            <h1 id="text-slid">Os melhores <br> profissionais <br> em um só lugar!</h1>
+            <p>A Kléofas Clinica Médica traz um novo conceito <br> em relação a consultas e exames laboratoriais <br> tudo agora em um só lugar! Mais facilidade, praticidade <br> e comodidade só para você.</p>
+        </div>
+        <script type="text/javascript">
+            const fotos = document.querySelector('.fotos');
+            const slides = fotos.getElementsByTagName('img');
+            var i = 0;
+
+            function nextSlide(){
+                slides[i].classList.remove('active');
+                i = (i + 1) % slides.length;
+                slides[i].classList.add('active');
+            }
+
+            setInterval(nextSlide, 5000)
+        </script>
+        <div><br></div>
+        <div><br></div>
+        <div><br></div>
+        <div><br></div>
+        <div><br></div>
+        <div><br></div>
+        <div id="section2"><br></div>
+    </section>
+    <section class="grid" id="section2">
+        <h1>Tudo o que você precisa num só lugar!</h1>
+            <h3>Facilidade e comodidade pra você e sua familia</h3>
+        <div class="grid-div">
+            <div>
+                <i class="fa fa-check-square fa-5x"></i>
+                <p class="grid-text">Check-Up com consultas e exames</p>
+            </div>
+            <div>
+                <i class="fa fa-star fa-5x"></i>
+                <p class="grid-text">Mais de 15 especialidades médicas</p>
+            </div>
+            <div>
+                <i class="fa fa-car fa-5x"></i>
+                <p class="grid-text">Estacionamento próprio</p>
+            </div>
+            <div>
+                <i class="fa fa-flask fa-5x"></i>
+                <p class="grid-text">Exames Laboratoriais</p>
+            </div>
+            <div>
+                <i class="fa fa-picture-o fa-5x"></i>
+                <p class="grid-text">Tomografia Computadorizada</p>
+            </div>
+            <div>
+                <i class="fa fa-search-plus fa-5x"></i>
+                <p class="grid-text">Ressonância Magnética</p>
+            </div>
+            <div>
+                <i class="fa fa-medkit fa-5x"></i>
+                <p class="grid-text">Raio X</p>
+            </div>
+            <div>
+                <i class="fa fa-hospital-o fa-5x"></i>
+                <p class="grid-text">Densitometria Óssea</p>
+            </div>
+            <div>
+                <i class="fa fa-heartbeat fa-5x"></i>
+                <p class="grid-text">Eletrocardiograma</p>
+            </div>
+            <div>
+                <i class="fa fa-eercast fa-5x"></i>
+                <p class="grid-text">Ultrassom</p>
+            </div>
+            <div>
+                <i class="fa fa-hand-paper-o fa-5x"></i>
+                <p class="grid-text">Exames Toxicológicos</p>
+            </div>
+            <div>
+                <i class="fa fa-user-md fa-5x"></i>
+                <p class="grid-text" id="section3">Consultas Médicas</p>
+            </div>
+        </div>
+    </section>
+    <section >
+        <div class="section3" >
+            <h1>Quem ama cuida!</h1>
+        </div>
+        <div class="section3-flex" >
+            <img src="files/familia-feliz.png">
+            <span>Levar um atendimento de qualidade, com alta tecnologia e humanizado à<br>
+                 população: <strong>essa é a nossa maior especialidade! </strong> <br>
+                 Tudo com condições especiais pra quem precisa de exames e consultas<br>
+                 com resultados rápidos, sem burocracia, com a comodidade e facilidade <br>
+                 de ter <strong>tudo em um só lugar</strong>.<br>
+                 Amor pelo que fazemos é o que nos move a continuar cada dia mais <br> buscando o melhor para cuidar do bem mais precioso que você possui:
+                 <br><strong>sua saúde e o da sua família !</strong></span>
+        </div>
+    <div class="gambiarra">
+        <p id="section4"></p>
+    </div>
+        <div></div>
+    </section>
+    <section class="section4">
+        <div>
+            <h1 id="porque">Por quê escolher a Clínica Kléofas</h1>
+            <p>Venha agora mesmo para a <strong>Clínica Kléofas</strong> e encante-se com nossa estrutura, nosso ambiente e um atendimento humanizado para você e toda sua família.<br>
+               Dispomos de um equipe altamente capacitada. Temos inúmeros tipos de exames, laboratoriais, registros gráficos, de imagens (ressonância magnética,<br>
+               tomografia computadorizada, raio x, densitometria óssea, ultrassom) e consultas médicas com diversas especialidades. Sendo a única clínica da região a<br>
+               oferecer essa comodidade de exames e consultas em um só lugar.</p>
+        </div>
+        <div class="s4grid">
+            <div>
+                <i class="fa fa-user-md fa-5x"></i>
+                <h1>Profissionais Qualificados</h1>
+                <p class="grid-text">Todos os profissionais da Clínica Kléofas passam por<br> um padrão de treinamento para lhe atender com excelência.</p>
+            </div>
+            <div>
+                <i class="fa fa-heart fa-5x"></i>
+                <h1>Valorização</h1>
+                <p class="grid-text">Um dos nossos pilares e valores, é tratar pessoas como pessoas.<br> Aqui, você e sua família estarão sempre em primeiro lugar.</p>
+            </div>
+            <div>
+                <i class="fa fa-stethoscope fa-5x"></i>
+                <h1>Inovação Sempre</h1>
+                <p class="grid-text">Equipamentos modernos, profissionais qualificados, exames<br> de última geração, nos tornam autoridade na região.</p>
+            </div>
+
+        </div>
+        <div class="imgsc3">
+            <img src="files/clinicamedica.png">
+            <p>Clínica Médica e Diagnósticos em Saúde</p>
+            <p>⚕️Consultas Médicas</p>
+            <p>💉Exames Laboratoriais</p>
+            <p>🦠Anatomia Patológica</p>
+            <p>☢️Diagnóstico por Imagem</p>
+            <p>📉Registros Gráficos</p>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="fid">
+            <img src="files/clinicamedica.png">
+            <div>
+                <a href="https://www.instagram.com"> <i class="fa fa-instagram"></i></a>
+                <a href="https://www.whatsapp.com"><i class="fa fa-whatsapp"></i></a>
+                <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+            </div>
+        </div>
+        <div class="div2">
+            <div>
+                <h1>Endereço</h1>
+                <p>Avenida das Árvores, 456<br>Bairro Vila Fantasia<br>Cidade Imaginária, Estado Inventado<br>CEP: 00000-000</p>
+            </div>
+            <div>
+                <h1>Atendimento</h1>
+                <p>Segunda à Sexta: 07h às 17hs<br>Sábados: 07 às 11hs<br>Domingos: Fechado</p>
+            </div>
+            <div>
+                <h1 id="gambiarra2"><i class="fa fa-whatsapp"></i> 00 00000 0000</h1>
+                <p>Entre em contato conosco através do nosso Whatsapp ou por nosso e-mail.</p>
+                <p>email@e-mail.com.br</p>
+            </div>
+        </div>
+    </footer>
+    <div class="final"><h1>Copyright © 2024 - Clínica_Kleófas - Clínica Médica e Diagnósticos Ltda - CNPJ: 00.000.000/0000-00</h1></div>
+</body>
+</html>
